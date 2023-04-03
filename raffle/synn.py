@@ -5,7 +5,10 @@ import pyautogui
 import random 
 
 #Setting up driver
-driver = webdriver.Chrome(r'C:\Users\benwo\Documents\chromedriver\chromedriver.exe')
+#For PC
+#driver = webdriver.Chrome(r'C:\Users\benwo\Documents\chromedriver\chromedriver.exe')
+#For mac
+driver = webdriver.Chrome(r'/Users/benworsley/Documents/chromedriver/chromedriver')
 time.sleep(5)
 driver.get('https://twitch.tv/synn/chat')
 
