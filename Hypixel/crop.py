@@ -12,12 +12,16 @@ def left93(layers):
             letter = 'a'
         pyautogui.keyDown('shift')
         pyautogui.keyDown(letter)
-        time.sleep(119)
+        time.sleep(125)
         time.sleep(ran(2,10))
         pyautogui.keyUp(letter)
+        pyautogui.keyUp('shift')
         time.sleep(ran(2,10))
     pyautogui.keyUp('shift')
-    pyautogui.press('up')
+    pyautogui.press('/')
+    time.sleep(1)
+    pyautogui.typewrite('warp garden')
+    pyautogui.press('enter')
     
 
 def right93(layers):
@@ -50,10 +54,7 @@ def Pumpkin():
         time.sleep(ran(20,25))
         pyautogui.keyUp('w')
         
-        
-        
-        
-    
+
 def countDown(s):
     for second in range(s,0,-1):
         print(second)
